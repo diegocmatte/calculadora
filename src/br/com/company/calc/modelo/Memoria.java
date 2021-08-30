@@ -46,7 +46,7 @@ public class Memoria {
         } else if(tipoComando == TipoComando.SINAL && textoAtual.contains("-")) {
             textoAtual = textoAtual.substring(1);
         } else if(tipoComando == TipoComando.SINAL && !textoAtual.contains("+")){
-            textoAtual = "-" + textoAtual.substring(1);
+            textoAtual = "-" + textoAtual;
         } else if(tipoComando == TipoComando.NUMERO || tipoComando == TipoComando.VIRGULA){
             textoAtual = substituir ? texto : textoAtual + texto;
             substituir = false;
